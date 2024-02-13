@@ -1,0 +1,28 @@
+@use '../../styles/variables' as v;
+
+.login-form {
+  &-element {
+    display: flex;
+    align-items: center;
+  }
+
+  &-message {
+    margin: .3em 1em;
+  }
+
+  &-logged {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &-button {
+    font-size: 1em;
+    color: #fff;
+    background-color: v.$color;
+    border-radius: .3em;
+    border: 0;
+    padding: .7em;
+    height: 2.5em;
+  }
+}

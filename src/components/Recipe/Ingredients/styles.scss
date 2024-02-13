@@ -1,0 +1,22 @@
+@use '../../../styles/variables' as v;
+
+.ingredients {
+  margin: v.$gutter 0;
+}
+
+.ingredient {
+  border-bottom: 1px solid #ccc;
+  padding: v.$halfGutter;
+
+  &:last-child {
+    border: none;
+  }
+
+  &-quantity {
+    background-color: v.$color;
+    color: #fff;
+    padding: .3em .6em;
+    border-radius: .3em;
+    display: inline-block;
+  }
+}

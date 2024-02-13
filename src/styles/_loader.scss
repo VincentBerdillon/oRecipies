@@ -1,0 +1,45 @@
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  position: relative;
+  min-height: 30px;
+  min-width: 30px;
+}
+.loader:after,
+.loader:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.loader:after {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid #f0f;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: 3s linear infinite spin;
+  animation: 3s linear infinite spin;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 15;
+}
+.loader:before {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: rgba(0, 255, 0, 0.9);
+  z-index: 10;
+}
+
+.error {
+  color: #f0f;
+  text-align: center;
+  font-weight: bold;
+  background-color: #0f0;
+  padding: 0.5rem;
+}

@@ -1,0 +1,21 @@
+@use '../../styles/variables' as v;
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app {
+  animation: pop 0.5s;
+  padding-left: v.$menuWidth;
+
+  @media (max-width: v.$small) {
+    padding-left: v.$smallMenuWidth;
+  }
+}

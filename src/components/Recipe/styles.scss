@@ -1,0 +1,5 @@
+@use '../../styles/variables' as v;
+
+.recipe {
+  padding: 0 v.$gutter;
+}

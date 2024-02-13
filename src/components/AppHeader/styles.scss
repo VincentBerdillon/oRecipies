@@ -1,0 +1,14 @@
+@use '../../styles/variables' as v;
+
+.header {
+  padding: v.$halfGutter v.$gutter;
+  box-shadow: 0 20px 20px -30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  &-logo {
+    width: 50px;
+  }
+}
